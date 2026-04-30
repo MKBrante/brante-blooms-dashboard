@@ -350,11 +350,11 @@ function checkPW(){
     <div class="health-row" id="health-row"></div>
   </div>
   <div class="kpi-row">
-    <div class="kpi"><div class="kpi-lbl">Your IG Followers</div><div class="kpi-val" id="ov-ig-val">285</div><div class="kpi-sub" id="ov-ig-sub">Market leader has 7,778</div><span class="badge b-red">Biggest gap</span></div>
-    <div class="kpi"><div class="kpi-lbl">Entry Price Point</div><div class="kpi-val">$45</div><div class="kpi-sub">Competitive — tied for lowest</div><span class="badge b-green">Competitive</span></div>
+    <div class="kpi"><div class="kpi-lbl">Your IG Followers</div><div class="kpi-val" id="ov-ig-val">—</div><div class="kpi-sub" id="ov-ig-sub">—</div><span class="badge b-red">Biggest gap</span></div>
+    <div class="kpi"><div class="kpi-lbl">Entry Price Point</div><div class="kpi-val" id="ov-entry-val">—</div><div class="kpi-sub" id="ov-entry-sub">—</div><span class="badge" id="ov-entry-badge">—</span></div>
     <div class="kpi" id="ov-kpi-prod"><div class="kpi-lbl" id="ov-kpi-prod-lbl">Holiday Products</div><div class="kpi-val" id="ov-kpi-prod-val">6</div><div class="kpi-sub" id="ov-kpi-prod-sub">Gather &amp; Bloom has 35</div><span class="badge b-red">Needs expansion</span></div>
     <div class="kpi"><div class="kpi-lbl">Google Rating</div><div class="kpi-val" id="ov-google-val">4.9</div><div class="kpi-sub" id="ov-google-sub">47 reviews</div><span class="badge b-green">Excellent</span></div>
-    <div class="kpi"><div class="kpi-lbl">Online Ordering</div><div class="kpi-val">No</div><div class="kpi-sub">7 of 8 competitors have it</div><span class="badge b-red">Missing</span></div>
+    <div class="kpi"><div class="kpi-lbl">Online Ordering</div><div class="kpi-val">Yes</div><div class="kpi-sub">Now available on website</div><span class="badge b-green">Active</span></div>
     <div class="kpi"><div class="kpi-lbl">Subscription</div><div class="kpi-val">Yes</div><div class="kpi-sub">Rare among local florists</div><span class="badge b-green">Differentiator</span></div>
   </div>
   <div class="section">
@@ -404,10 +404,10 @@ function checkPW(){
 <!-- SOCIAL -->
 <div id="tab-social" class="tab-panel">
   <div class="kpi-row">
-    <div class="kpi"><div class="kpi-lbl">Your IG Followers</div><div class="kpi-val">285</div><div class="kpi-sub">Lowest among tracked florists</div><span class="badge b-red">Priority gap</span></div>
-    <div class="kpi"><div class="kpi-lbl">Your IG Posts</div><div class="kpi-val">28</div><div class="kpi-sub">Owen's has 2,613 posts</div><span class="badge b-red">Very low volume</span></div>
-    <div class="kpi"><div class="kpi-lbl">Facebook Page</div><div class="kpi-val">None</div><div class="kpi-sub">6 of 7 competitors active</div><span class="badge b-red">Missing channel</span></div>
-    <div class="kpi"><div class="kpi-lbl">Gather &amp; Bloom Lead</div><div class="kpi-val">27×</div><div class="kpi-sub">More IG followers than you</div><span class="badge b-amber">Benchmark</span></div>
+    <div class="kpi"><div class="kpi-lbl">Your IG Followers</div><div class="kpi-val" id="sm-ig-val">—</div><div class="kpi-sub" id="sm-ig-sub">—</div><span class="badge b-red" id="sm-ig-badge">Priority gap</span></div>
+    <div class="kpi"><div class="kpi-lbl">Your IG Posts</div><div class="kpi-val" id="sm-posts-val">—</div><div class="kpi-sub" id="sm-posts-sub">—</div><span class="badge b-red">Volume gap</span></div>
+    <div class="kpi"><div class="kpi-lbl">Facebook Page</div><div class="kpi-val" id="sm-fb-val">—</div><div class="kpi-sub" id="sm-fb-sub">—</div><span class="badge" id="sm-fb-badge">—</span></div>
+    <div class="kpi"><div class="kpi-lbl">Gather &amp; Bloom Lead</div><div class="kpi-val" id="sm-lead-val">—</div><div class="kpi-sub">More IG followers than you</div><span class="badge b-amber">Benchmark</span></div>
   </div>
   <div class="section">
     <div class="section-label">Social Media Presence <button class="edit-sec-btn" onclick="openQuickEditAll()">✏️ Update Numbers</button></div>
@@ -636,7 +636,7 @@ const DATA = {
   social:{
     platforms:[
       {platform:'Instagram', brante:'✓ Active',   davis:'✓ Active',         kennesaw:'✓ Active',gather:'✓ Active',kmw:'✓ Active',  owens:'✓ Active',faith:'✓ Active',carithers:'✓ Active'},
-      {platform:'Facebook',  brante:'✗ Not found',davis:'✓ 414 followers',  kennesaw:'✓ Active',gather:'✓ Active',kmw:'✓ Active',  owens:'✓ Active',faith:'✓ Active',carithers:'✓ Active'},
+      {platform:'Facebook',  brante:'✓ Active',   davis:'✓ 414 followers',  kennesaw:'✓ Active',gather:'✓ Active',kmw:'✓ Active',  owens:'✓ Active',faith:'✓ Active',carithers:'✓ Active'},
       {platform:'Pinterest', brante:'✗',          davis:'✓',                kennesaw:'✗',       gather:'✗',       kmw:'✗',         owens:'✗',       faith:'✗',       carithers:'✗'},
       {platform:'Yelp',      brante:'✗',          davis:'✓',                kennesaw:'✗',       gather:'✗',       kmw:'✗',         owens:'✗',       faith:'✓ (BloomNation)',carithers:'✓'},
       {platform:'Other',     brante:'—',          davis:'—',                kennesaw:'—',       gather:'—',       kmw:'Teleflora', owens:'—',       faith:'DoorDash, Uber Eats',carithers:'Twitter/X, Rewards'}
@@ -678,7 +678,7 @@ const DATA = {
         {tag:'now',  text:'<strong>Increase or reframe the discount.</strong> "Free local delivery on preorders" or "$10 off orders over $100" outperforms a flat $5 discount psychologically.'},
         {tag:'now',  text:'<strong>Post 3–5 Instagram pieces before May 10th.</strong> Lead with the mother-daughter studio story — no competitor can match this narrative.'},
         {tag:'now',  text:'<strong>Add a non-floral bundle.</strong> Kennesaw, Gather & Bloom, K. Mike Whittle, Faith Designs, and Carithers all offer add-ons. Even "Blooms + candle" increases average order value.'},
-        {tag:'now',  text:"<strong>Set up a Facebook Business Page.</strong> You're the only florist tracked without one. Even Davis Flowers (123 IG followers) has 414 Facebook followers."},
+        {tag:'now',  text:'<strong>Post on your Facebook page before Mother\'s Day.</strong> Your page is live — use it. Davis Flowers has 414 Facebook followers; Facebook skews older, which is your core gift-buying demographic.'},
         {tag:'post', text:'<strong>Pitch the floral subscription as "keep Mom\'s flowers going all summer."</strong> Only Gather & Bloom also offers this — it\'s a real differentiator.'},
         {tag:'post', text:'<strong>Consider a workshop tie-in</strong> modeled after Gather & Bloom\'s strategy, the primary driver of their 7,778-follower audience.'}
       ]
@@ -697,7 +697,7 @@ const DATA = {
   },
 
   operations:{
-    brante:   {deliveryFee:15,freeThreshold:null,sameDayFee:null,deliveryRadius:15,wireService:'None',          onlineOrdering:false,wedding:true, funeral:true, corporate:false,hours:'Mon–Fri 9am–5pm, Sat 9am–12pm, Sun Closed',events:[]},
+    brante:   {deliveryFee:15,freeThreshold:null,sameDayFee:null,deliveryRadius:15,wireService:'None',          onlineOrdering:true, wedding:true, funeral:true, corporate:false,hours:'Mon–Fri 9am–5pm, Sat 9am–12pm, Sun Closed',events:[]},
     davis:    {deliveryFee:12,freeThreshold:null,sameDayFee:10,  deliveryRadius:10,wireService:'None',          onlineOrdering:true, wedding:true, funeral:true, corporate:false,hours:'Mon–Sat 9am–5pm',       events:[]},
     kennesaw: {deliveryFee:12,freeThreshold:75,  sameDayFee:15,  deliveryRadius:20,wireService:'FTD',           onlineOrdering:true, wedding:true, funeral:true, corporate:true, hours:'Mon–Sat 8am–5pm',       events:[]},
     gather:   {deliveryFee:10,freeThreshold:100, sameDayFee:20,  deliveryRadius:15,wireService:'None',          onlineOrdering:true, wedding:true, funeral:false,corporate:false,hours:'Mon–Sat 9am–6pm',       events:[{name:'Wreath Workshop',date:'May 2026',price:'$65',notes:'Evening class, BYOB'}]},
@@ -708,7 +708,7 @@ const DATA = {
   },
 
   content:{
-    brante:   {hasCheckout:false,hasPriceFilters:false,mobile:true, hasBlog:false,newsletter:false,tiktok:{handle:'',              followers:null},pinterest:{handle:'',                   followers:null}, igScore:3,webScore:3,hasVideo:false,behindScenes:true},
+    brante:   {hasCheckout:true, hasPriceFilters:false,mobile:true, hasBlog:false,newsletter:false,tiktok:{handle:'',              followers:null},pinterest:{handle:'',                   followers:null}, igScore:3,webScore:3,hasVideo:false,behindScenes:true},
     davis:    {hasCheckout:true, hasPriceFilters:false,mobile:true, hasBlog:false,newsletter:false,tiktok:{handle:'',              followers:null},pinterest:{handle:'@davisflowers',      followers:120},  igScore:2,webScore:2,hasVideo:false,behindScenes:false},
     kennesaw: {hasCheckout:true, hasPriceFilters:true, mobile:true, hasBlog:false,newsletter:false,tiktok:{handle:'',              followers:null},pinterest:{handle:'',                   followers:null}, igScore:3,webScore:3,hasVideo:false,behindScenes:false},
     gather:   {hasCheckout:true, hasPriceFilters:false,mobile:true, hasBlog:true, newsletter:true, tiktok:{handle:'@gatherandbloom',followers:2100}, pinterest:{handle:'@gatherandbloom',  followers:890},  igScore:5,webScore:5,hasVideo:true, behindScenes:true},
@@ -721,8 +721,8 @@ const DATA = {
   strategy:{
     swot:[
       {id:'brante',  name:'Brante Blooms ★',         isSubject:true,
-        strengths:['Unique mother-daughter story — no competitor can match','Promo code "MOM" — only florist with one','Boutique artisan brand positioning','Competitive rose pricing (lowest for dozen)','Subscription offering + gift certificates','Urgency / preorder banner live on site'],
-        weaknesses:['Tiny social following (285 IG)','No dedicated holiday landing pages','Only 6 holiday products listed','Same-day delivery not listed publicly','No non-floral add-ons','No Facebook page','No online ordering']},
+        strengths:['Unique mother-daughter story — no competitor can match','Promo code "MOM" — only florist with one','Boutique artisan brand positioning','Competitive rose pricing (lowest for dozen)','Subscription offering + gift certificates','Urgency / preorder banner live on site','Facebook Business Page active','Online ordering now live on website'],
+        weaknesses:['Small but growing social following','No dedicated holiday landing pages','Only 6 holiday products listed','Same-day delivery not listed publicly','No non-floral add-ons','Facebook & social content needs consistency']},
       {id:'davis',   name:'Davis Flowers',            isSubject:false,
         strengths:['Dedicated holiday pages','FAQ builds customer trust','Multi-platform: FB, Pinterest, Yelp','Same-day delivery listed'],
         weaknesses:['Very low IG following (123)','No discount or promo code','No urgency messaging']},
@@ -746,16 +746,16 @@ const DATA = {
         weaknesses:['Premium pricing — higher entry (~$65)','No specific promo code','No subscription gifting']}
     ],
     recommendations:[
-      {tag:'now',    text:"<strong>Launch a Facebook Business Page this week.</strong> You're the only tracked florist without one. Davis Flowers (123 IG followers) has 414 Facebook followers — Facebook skews older, which is your gift-buying demographic."},
-      {tag:'now',    text:'<strong>Enable online ordering.</strong> 7 of 8 competitors accept orders online. You\'re losing impulse purchases every day this is missing.'},
+      {tag:'now',    text:'<strong>Post consistently on Facebook & Instagram.</strong> Both channels are now live — the gap is content volume. Davis Flowers has 414 Facebook followers with only 123 IG followers. Facebook skews older, which is your gift-buying demographic. Aim for 3–4 posts per week across both.'},
+      {tag:'now',    text:'<strong>Make online ordering more visible.</strong> You have it live — ensure it\'s the primary call-to-action on your homepage, Google Business profile, and every social bio. Customers won\'t use what they can\'t find.'},
       {tag:'now',    text:'<strong>Add same-day delivery to your website.</strong> Customers assume it\'s not available if it\'s not listed. Even "call us for same-day" converts better than silence.'},
       {tag:'now',    text:'<strong>Add 1–2 non-floral bundles to every product page.</strong> Kennesaw, Gather & Bloom, Faith Designs, and Carithers all upsell candles, chocolates, or gifts. Increases average order value with no new SKUs needed.'},
-      {tag:'watch',  text:"<strong>Monitor Gather & Bloom's workshop calendar.</strong> Their 7,778-follower audience is almost entirely workshop-driven. If they expand to a third location or launch a subscription club, that directly threatens your Acworth market."},
+      {tag:'now',    text:'<strong>Publish your subscription pricing on the website.</strong> You offer subscriptions but pricing isn\'t listed. Gather & Bloom publishes $55/$75/$95 tiers. Published prices convert browsers to buyers — hidden pricing creates friction.'},
+      {tag:'watch',  text:"<strong>Monitor Gather & Bloom's workshop calendar.</strong> Their 7,778-follower audience is largely workshop-driven. If they expand to a third location or launch a subscription club, that directly threatens your Acworth market."},
       {tag:'watch',  text:"<strong>Watch Faith Designs' DoorDash/Uber Eats expansion.</strong> They're the only florist with on-demand delivery apps. If this model gains traction, it changes the delivery fee dynamic for everyone."},
-      {tag:'growth', text:'<strong>Build a workshop program.</strong> A monthly "Bloom & Learn" evening at the studio would generate IG content, email subscribers, and word-of-mouth in the Acworth community. Gather & Bloom proves this model works.'},
+      {tag:'growth', text:'<strong>Build a workshop program.</strong> A monthly "Bloom & Learn" evening at the studio would generate IG content, email subscribers, and word-of-mouth in the Acworth community. Gather & Bloom proves this model works at scale.'},
       {tag:'growth', text:'<strong>Pitch corporate accounts.</strong> Kennesaw, K. Mike Whittle, Owen\'s, and Carithers all serve corporate clients. Weekly office arrangements are recurring revenue that smooths out holiday peaks.'},
-      {tag:'growth', text:'<strong>Launch a TikTok account.</strong> Gather & Bloom has 2,100 TikTok followers. The mother-daughter story and behind-the-scenes studio content is exactly what performs on TikTok.'},
-      {tag:'growth', text:'<strong>Formalize the subscription program with published pricing.</strong> You offer it but it\'s not priced on the site. Gather & Bloom charges $55/$75/$95/delivery. Publishing prices converts browsers to buyers.'}
+      {tag:'growth', text:'<strong>Launch a TikTok account.</strong> Gather & Bloom has 2,100 TikTok followers. The mother-daughter story and behind-the-scenes studio content is exactly what performs on TikTok — low cost, high reach.'}
     ]
   },
 
@@ -799,7 +799,7 @@ const HOLIDAY_GROUPS=[
 /* ═══════════════════════════════════════
    STORAGE
 ═══════════════════════════════════════ */
-const LS_KEY='branteblooms_v2';
+const LS_KEY='branteblooms_v3';
 function saveLS(){try{localStorage.setItem(LS_KEY,JSON.stringify(DATA));}catch(e){}}
 function loadLS(){
   try{
@@ -815,6 +815,11 @@ function loadLS(){
 ═══════════════════════════════════════ */
 function visible(){return DATA.competitors.filter(c=>c.visible);}
 function isOk(v){return v&&v.startsWith('✓');}
+function calcReach(followers){
+  if(!followers||followers<1000)return{cls:'low',lbl:'LOW'};
+  if(followers<7500)return{cls:'med',lbl:'MEDIUM'};
+  return{cls:'high',lbl:'HIGH'};
+}
 function isNo(v){return v&&v.startsWith('✗');}
 function cellCls(v){return isOk(v)?'ok':isNo(v)?'no':(v==='—'||v===''||!v)?'na':'';}
 function currentHoliday(){return DATA.holidays[DATA.currentHolidayKey];}
@@ -934,12 +939,79 @@ function renderTables(){
   }).join('');
   document.getElementById('health-row').innerHTML=healthHtml;
 
-  // Update overview KPIs
+  // Update overview & social KPIs dynamically
   const bb=DATA.competitors[0];
   const rep=DATA.reputation.brante||{};
+  const allComps=DATA.competitors;
+  const otherComps=allComps.filter(c=>!c.isSubject);
+
+  // ── Overview: IG followers ──
+  const igLeader=allComps.reduce((a,b)=>(b.ig.followers||0)>(a.ig.followers||0)?b:a);
   document.getElementById('ov-ig-val').textContent=(bb.ig.followers||0).toLocaleString();
+  document.getElementById('ov-ig-sub').textContent=igLeader.id!=='brante'?`${igLeader.name} has ${(igLeader.ig.followers||0).toLocaleString()}`:'You lead the market!';
+
+  // ── Overview: Entry price ──
+  const minEntry=Math.min(...allComps.map(c=>c.entryBouquet||999));
+  const entryEl=document.getElementById('ov-entry-val');
+  const entrySub=document.getElementById('ov-entry-sub');
+  const entryBadge=document.getElementById('ov-entry-badge');
+  if(entryEl){
+    entryEl.textContent='$'+(bb.entryBouquet||'—');
+    const tied=allComps.filter(c=>c.entryBouquet===minEntry);
+    if(bb.entryBouquet===minEntry){
+      entrySub.textContent=tied.length>1?'Tied for lowest entry price':'Lowest entry price';
+      entryBadge.className='badge b-green';entryBadge.textContent='Competitive';
+    } else {
+      const cheaperCount=allComps.filter(c=>!c.isSubject&&(c.entryBouquet||999)<bb.entryBouquet).length;
+      entrySub.textContent=cheaperCount+' competitor'+(cheaperCount>1?'s':'')+' priced lower';
+      entryBadge.className='badge b-amber';entryBadge.textContent='Watch';
+    }
+  }
+
+  // ── Overview: Google ──
   document.getElementById('ov-google-val').textContent=rep.googleRating||'—';
   document.getElementById('ov-google-sub').textContent=(rep.googleReviews||0)+' reviews';
+
+  // ── Social tab: IG followers ──
+  const smIgVal=document.getElementById('sm-ig-val');
+  if(smIgVal){
+    smIgVal.textContent=(bb.ig.followers||0).toLocaleString();
+    const isLowest=!otherComps.some(c=>(c.ig.followers||0)<(bb.ig.followers||0)&&(c.ig.followers||0)>0);
+    document.getElementById('sm-ig-sub').textContent=isLowest?'Lowest among tracked florists':`Above ${otherComps.filter(c=>(c.ig.followers||0)<(bb.ig.followers||0)).length} competitor(s)`;
+  }
+
+  // ── Social tab: IG posts ──
+  const smPostsVal=document.getElementById('sm-posts-val');
+  if(smPostsVal){
+    smPostsVal.textContent=(bb.ig.posts||0).toLocaleString();
+    const mostPosts=allComps.reduce((a,b)=>(b.ig.posts||0)>(a.ig.posts||0)?b:a);
+    document.getElementById('sm-posts-sub').textContent=mostPosts.id!=='brante'?`${mostPosts.name} has ${(mostPosts.ig.posts||0).toLocaleString()} posts`:'Most posts among tracked florists!';
+  }
+
+  // ── Social tab: Facebook ──
+  const smFbVal=document.getElementById('sm-fb-val');
+  if(smFbVal){
+    const fbPresent=bb.facebook&&bb.facebook.present;
+    smFbVal.textContent=fbPresent?(bb.facebook.detail||'Active'):'None';
+    const fbCount=otherComps.filter(c=>c.facebook&&c.facebook.present).length;
+    document.getElementById('sm-fb-sub').textContent=fbCount+' of '+otherComps.length+' competitors active';
+    const badge=document.getElementById('sm-fb-badge');
+    badge.className=fbPresent?'badge b-green':'badge b-red';
+    badge.textContent=fbPresent?'Active':'Missing channel';
+  }
+
+  // ── Social tab: Gather & Bloom lead ──
+  const smLeadVal=document.getElementById('sm-lead-val');
+  if(smLeadVal){
+    const gather=allComps.find(c=>c.id==='gather');
+    if(gather&&bb.ig.followers&&bb.ig.followers>0){
+      smLeadVal.textContent=Math.round(gather.ig.followers/bb.ig.followers)+'×';
+    } else { smLeadVal.textContent='N/A'; }
+  }
+
+  // ── Header count ──
+  const hdrCount=document.getElementById('hdr-count');
+  if(hdrCount) hdrCount.textContent=allComps.filter(c=>c.visible).length;
 
   // Overview table
   document.getElementById('ov-table-wrap').innerHTML=`<table><thead><tr>
@@ -977,7 +1049,7 @@ function renderTables(){
     <td>${c.ig.posts!==null?c.ig.posts.toLocaleString():'<span class="na">N/A</span>'}</td>
     <td class="${c.facebook.present?'ok':'no'}">${c.facebook.detail}</td>
     <td>${c.otherPlatforms}</td>
-    <td><span class="r-${c.reach}">${c.reach.toUpperCase()}</span></td></tr>`).join('')}</tbody></table>`;
+    <td><span class="r-${calcReach(c.ig.followers).cls}">${calcReach(c.ig.followers).lbl}</span></td></tr>`).join('')}</tbody></table>`;
 
   document.getElementById('sm-platform-wrap').innerHTML=`<table><thead><tr>
     <th>Platform</th>${comps.map(c=>`<th class="${c.isSubject?'you':''}">${c.name}${c.isSubject?' ★':''}</th>`).join('')}
